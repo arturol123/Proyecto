@@ -1,0 +1,85 @@
+.section_musica{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 2rem;
+}
+
+.parrafo_musica{
+    color: black;
+    font-size: 1.2rem;
+    padding: 2rem;
+    width: 50%;
+}
+
+.article_musica{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 90%;
+}
+
+.img_musica{
+    width: 25%;
+    border-radius: 0.3rem;
+    background: linear-gradient(45deg, #6e6d6d, #46494a, transparent);
+    display: flex;
+    align-items: center;
+    
+}
+
+.img_musica img{
+        border-radius: 0.3rem;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        transform: rotate(-10deg);
+        transition: .3s;  
+}
+
+.img_musica img:hover {
+    transform: rotate(0); }
+
+.Subtitulo_musica{
+    margin: 2rem;
+}
+
+.PlayList{
+    padding-top: 50px;
+    width: 100%;
+   }
+
+iframe{
+    margin-left: 25px;
+}
+
+@media only screen and (max-width:480px){ 
+
+    .article_musica{
+        display: flex;
+        flex-direction: column;
+        width: 98%;
+        padding-top: 0;
+
+    }
+
+    .parrafo_musica{
+        color: black;
+        font-size: 1.2rem;
+        padding: 0.1rem;
+        width: 98%;
+    }
+
+    .img_musica {
+        width: 80%;
+    }
+
+    .PlayList {
+        padding-top: 0px;
+    }
+}
+
